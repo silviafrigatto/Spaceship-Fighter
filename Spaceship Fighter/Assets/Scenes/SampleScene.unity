@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 547154033}
   m_Layer: 0
   m_Name: Inimigo Verde
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,6 +347,8 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 6077482861033620161, guid: 9c9a9e977e32ed24c9b1fee288b39696, type: 3}
   localDoDisparo: {fileID: 1639286362}
   velocidadeDoInimigo: 8
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 0
   tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
@@ -365,7 +367,7 @@ GameObject:
   - component: {fileID: 898588136}
   m_Layer: 0
   m_Name: Inimigo Azul
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,6 +492,8 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 1125869831}
   localDoDisparo: {fileID: 1410142615}
   velocidadeDoInimigo: 10
+  vidaMaximaDoInimigo: 4
+  vidaAtualDoInimigo: 0
   tempoMaximoEntreOsLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
@@ -606,7 +610,7 @@ GameObject:
   - component: {fileID: 1643566087}
   m_Layer: 0
   m_Name: Inimigo Roxo
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,6 +734,8 @@ MonoBehaviour:
   laserDoInimigo: {fileID: 0}
   localDoDisparo: {fileID: 0}
   velocidadeDoInimigo: 15
+  vidaMaximaDoInimigo: 1
+  vidaAtualDoInimigo: 0
   tempoMaximoEntreOsLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
@@ -746,9 +752,10 @@ GameObject:
   - component: {fileID: 1941777024}
   - component: {fileID: 1941777023}
   - component: {fileID: 1941777025}
+  - component: {fileID: 1941777026}
   m_Layer: 0
   m_Name: Nave do Jogador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -875,6 +882,21 @@ MonoBehaviour:
   localDoDisparoUnico: {fileID: 1282723773}
   velocidadeDaNave: 10
   temLaserDuplo: 0
+--- !u!114 &1941777026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941777020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f828f4ed7a73342824e4d58b193beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMaximaDoJogador: 10
+  vidaAtualDoJogador: 0
+  temEscudo: 0
 --- !u!1001 &1657381121384271391
 PrefabInstance:
   m_ObjectHideFlags: 0
