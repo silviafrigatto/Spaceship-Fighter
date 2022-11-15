@@ -637,7 +637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -86.6, y: -5.5}
+  m_AnchoredPosition: {x: -86.6001, y: -5.5}
   m_SizeDelta: {x: 629.8081, y: 131.7595}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &974375114
@@ -687,7 +687,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.78
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1222,7 +1222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 18.8, y: 19.599976}
+  m_AnchoredPosition: {x: 18.800049, y: 19.599976}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1762263716
@@ -1418,7 +1418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76f828f4ed7a73342824e4d58b193beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaximaDoJogador: 10
+  barraDeVidaDoJogador: {fileID: 974375114}
+  vidaMaximaDoJogador: 20
   vidaAtualDoJogador: 0
   temEscudo: 0
 --- !u!1001 &1657381121384271391
