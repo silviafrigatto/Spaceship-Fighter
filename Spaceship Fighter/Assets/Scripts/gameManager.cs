@@ -21,8 +21,7 @@ public class gameManager : MonoBehaviour
     void Start()
     {
         pontuacaoAtual = 0;
-        //textoDePontuacaoAtual.GetComponent<TextMeshProUGUI>().faceColor = Color.white;
-        textoDePontuacaoAtual.text = "SCORE: " + pontuacaoAtual;
+        textoDePontuacaoAtual.text = "<color=white>" + "SCORE: " + pontuacaoAtual + "</color>";
     }
 
     // Update is called once per frame
@@ -34,6 +33,6 @@ public class gameManager : MonoBehaviour
     public void AumentarPontuacao(int pontosParaGanhar)
     {
         pontuacaoAtual += pontosParaGanhar;
-        textoDePontuacaoAtual.text = "SCORE: " + pontuacaoAtual;
+        textoDePontuacaoAtual.text = "<color=white>" + "SCORE: " + pontuacaoAtual + "</color>";
     }
 }
